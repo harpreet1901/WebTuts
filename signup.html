@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/signup.css">
+</head>
+<body>
+    <div class="logo">
+        <h1><a href="index.html">WebTuts</a></h1>
+      </div>
+
+    <div class="head2">
+       <h1>Signup</h1>
+       
+    </div>
+
+ 
+	<form action="index.html">
+		<div>
+			
+			<input type="text" name="firstname" id="firstname" placeholder=" " required>
+			<label for="firstname">First name</label>
+		</div>
+		<div>
+		
+			<input type="text" name="lastname" id="lastname" placeholder=" " required>
+			<label for="lastname">Last name</label>
+		</div>
+		<div>
+			
+			<input type="tel" name="tel" id="tel" placeholder=" "
+			pattern="[0-9]{10}" required>
+			<label for="tel">Phone No.</label>
+			<div class="requirements"> Must be a valid Phone Number 10 digits only!</div>
+		</div>
+		<div>
+			
+			<input type="email" name="email" id="email" placeholder=" " required>
+			<label for="email">Email</label>
+			<div class="requirements"> Must be a valid email addres!</div>
+		</div>
+		<div>
+			
+			<input type="password" name="password" id="password" placeholder=" "
+			pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+			<label for="password">Password</label>
+			<div class="requirements"> Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters </div>
+		</div>
+		<input type="submit" value="Sign up"/>
+	</form>
+ 
+</body>
+</html>
